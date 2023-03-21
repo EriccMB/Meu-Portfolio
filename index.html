@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        .botao-flutuante {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-box">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a target="blank"href="https://github.com/EriccMB">GitHub</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <button onclick="mobileMenu()"><img id="mobile-menu-button" src="img/mobile-menu-icon-closed.png" alt="" width="30px"></button>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a target="blank"href="https://github.com/EriccMB">GitHub</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+       
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="img-box-home">
+                <img src="img/home-img.svg" alt="Home Img" width="550px">
+            </div>
+            <div class="text-box-home">
+                <span>
+                    <h1>Hello!</h1><br>
+                    Seja bem-vindo ao meu portfólio
+                </span>
+            </div>
+        </section>
+        <section id="about-me">
+            <div class="img-box-about-me">
+                <img src="img/eu.png" alt="Me">
+            </div>
+            <div class="text-box-about-me">
+                <h3>Sobre mim</h3>
+                <span>Olá, meu nome é Eric Morais, sou um estudante com grande interesse em desenvolvimento front-end. Estou buscando crescer e me tornar um desenvolvedor altamente habilidoso e qualificado na criação de soluções web.</span>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="title-box-skills">
+                <h1>Habilidades</h1>
+            </div>
+            <div class="logos-box-skills">
+                <div class="logo-box one">
+                    <img src="img/icon-html-5.svg" alt="HTML 5" width="100px">
+                    <span>HTML5</span>
+                </div>
+                <div class="logo-box two">
+                    <img src="img/icon-css3.svg" alt="CSS3" width="100px">
+                    <span>CSS3</span>
+                </div>
+                <div class="logo-box one">
+                    <img src="img/icon-js.svg" alt="JS" width="100px">
+                    <span>JavaScript</span>
+                </div>
+                <div class="logo-box two">
+                    <img src="img/icon-php.svg" alt="PHP" width="100px">
+                    <span>PHP</span>
+                </div>
+            </div>
+        </section>
+        <!-- PROJETOS FUTUROS!
+        <section id="projects">
+            <div class="title-box-projects">
+                <h1>Projetos</h1>
+            </div>
+            <div class="projects-field">
+                <div class="project-box">
+                </div>
+            </div>
+        </section>
+        -->
+        <div class="line"></div>
+        <section id="contact">
+            <div class="title-box-contact">
+                <h1>Contato</h1>
+            </div>
+            <div class="social-medias-box-contact">
+                <div class="social-media-box">
+                    <a target="blank" href="https://www.instagram.com/portfolio.ericmorais/"><img src="img/instagram-img.svg" alt="Instagram" width="40px"></a>
+                </div>
+                <div class="social-media-box">
+                    <a href="mailto:ericm8251@gmail.com"><img src="img/email-img.svg" alt="Email" width="40px"></a>
+                </div>
+            </div>
+            <div class="form-box-contact">
+                <input type="text" id="name" name="name" placeholder="Nome">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <textarea type="text" id="mensage" name="mensage" placeholder="Mensagem"></textarea>
+                <input type="submit" id="enviar" value="Enviar">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>© 2023 Eric Morais - Todos os direitos reservados</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
