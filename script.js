@@ -10,7 +10,7 @@ function mobileMenu() {
 }
 
 window.sr = ScrollReveal({distance: '30px',
-easing: 'ease-out', reset:true});
+easing: 'ease-out', reset:false});
 
 sr.reveal('.img-box-home',{
     origin:'left',
